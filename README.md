@@ -7,9 +7,8 @@ Autoconfig is a mechanism that can be used to configure Firefox, Thunderbird, Se
 |File location:|Program directory|Profile|
 |Typical file permissions:|Admin or elevated|User|
 |Can affect:|All profiles|The profile where it resides|
-|Function interface:| * getPrefBranch()<br />* pref(prefName, value)<br />* defaultPref(prefName, value)<br />* lockPref(prefName, value)<br />* lockPref(prefName)<br /> * getPref(prefName)<br />* clearPref(prefName)<br />* setLDAPVersion(version)<br />* getLDAPAttributes(host, base, filter, attribs, isSecure)<br />* getLDAPValue(str, key)<br />* displayError(funcname, message)<br />* getenv(name)|* user_pref(prefName, value)<br />* pref(prefName, value)<br />* sticky_pref(prefName, value)|
-|Javascript:|Fully available including variables, custom functions, etc|Only comments and the above function calls are permitted|
-|Error handling:|Exceptions can be caught and reported|Processing is silently aborted|
+|Function API:| * getPrefBranch()<br />* pref(prefName, value)<br />* defaultPref(prefName, value)<br />* lockPref(prefName, value)<br />* lockPref(prefName)<br /> * getPref(prefName)<br />* clearPref(prefName)<br />* setLDAPVersion(version)<br />* getLDAPAttributes(host, base, filter, attribs, isSecure)<br />* getLDAPValue(str, key)<br />* displayError(funcname, message)<br />* getenv(name)|* user_pref(prefName, value)<br />* pref(prefName, value)<br />* sticky_pref(prefName, value)|
+|Javascript:|Most language features supported|Only the above function calls supported|
 |Can use other browser APIs via XPCOM:|Yes|No|
 |Can override or prevent user modifications:|Yes|No|
 
