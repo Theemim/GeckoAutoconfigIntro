@@ -9,7 +9,7 @@ Autoconfig is a mechanism that can be used to configure Firefox, Thunderbird, Se
 |Can affect:|All profiles|The profile where it resides|
 |Function API:| * getPrefBranch()<br />* pref(prefName, value)<br />* defaultPref(prefName, value)<br />* lockPref(prefName, value)<br />* lockPref(prefName)<br /> * getPref(prefName)<br />* clearPref(prefName)<br />* setLDAPVersion(version)<br />* getLDAPAttributes(host, base, filter, attribs, isSecure)<br />* getLDAPValue(str, key)<br />* displayError(funcname, message)<br />* getenv(name)|* user_pref(prefName, value)<br />* pref(prefName, value)<br />* sticky_pref(prefName, value)|
 |Javascript:|Most language features supported|Only the above function calls supported|
-|Can use XPCOM components and interfaces:|Yes|No|
+|Can use other browser APIs via XPCOM:|Yes|No|
 |Can override or prevent user modifications:|Yes|No|
 
 Most pages about autoconfig were created in the past and have not been kept up to date.  It is not unusual to see references to preferences and/or other things which are no longer applicable.  However, the basic characteristics of autoconfig (such as the function call interface it uses) have been pretty stable.  So even the oldest articles continue to have some relevancy.  I think Mike Kaply's articles provide enough information to get started.
