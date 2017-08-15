@@ -1,21 +1,20 @@
 ### Autoconfig
 
-Autoconfig is a mechanism that can be used to configure Firefox, Thunderbird, SeaMonkey, and other Gecko-based applications.  An autoconfig file is a Javascript file that can apply preferences (application settings) through function calls, and perform other operations, during program startup.  It is somewhat similar to a user.js file, but there are important differences between the two:
+Autoconfig is a mechanism that can be used to configure Firefox, Thunderbird, SeaMonkey, and other Gecko-based applications.  An autoconfig file is a Javascript file that can modify preferences (application settings) through function calls, and perform other operations, during program startup.  It is somewhat similar to the better known user.js file, but there are important differences between the two:
 
 |Characteristic|autoconfig|user.js|
 |:-------------|:---------|:------|
-|Typically used by:|Organizations, admins, programmers, advanced users|Anyone|
+|Typically used by:|Organizations, admins, advanced users|Anyone|
 |File location:|Program directory|Profile|
 |Typical file permissions:|Admin or elevated|User|
-|Applies to:|All profiles|Profile where it resides|
+|Can affect:|All profiles|The profile where it resides|
 |Function interface:| * getPrefBranch()<br />* pref(prefName, value)<br />* defaultPref(prefName, value)<br />* lockPref(prefName, value)<br />* lockPref(prefName)<br /> * getPref(prefName)<br />* clearPref(prefName)<br />* setLDAPVersion(version)<br />* getLDAPAttributes(host, base, filter, attribs, isSecure)<br />* getLDAPValue(str, key)<br />* displayError(funcname, message)<br />* getenv(name)|* user_pref(prefName, value)<br />* pref(prefName, value)<br />* sticky_pref(prefName, value)|
 |Javascript:|Fully available including variables, custom functions, etc|Only comments and the above function calls are permitted|
+|Error handling:|Exceptions can be caught and reported|Processing is silently aborted|
 |Can use other browser APIs via XPCOM:|Yes|No|
 |Can override or prevent user modifications:|Yes|No|
 
-An autoconfig file and user.js are not interchangeable.  However, in a single profile context or through profile-specific logic, an autoconfig file can perform the operations that a user.js can.  So autoconfig users can not only leverage the work put into various user.js projects, but contribute to them for mutual benefit.
-
-Most pages about autoconfig were created in the past.  Many of them refer to preferences and/or other things which are no longer applicable.  However, the basic characteristics of autoconfig (such as the function call interface it uses) have been quite stable.  So even the oldest articles are largely applicable where they speak of those.  I think reading Mike Kaply's articles will be enough to get most people started.
+Most pages about autoconfig were created in the past and have not been kept up to date.  It is not unusual to see references to preferences and/or other things which are no longer applicable.  However, the basic characteristics of autoconfig (such as the function call interface it uses) have been pretty stable.  So even the oldest articles continue to have some relevancy.  I think Mike Kaply's articles provide enough information to get started.
 
 #### Mike Kaply Articles
 * [Firefox Autoconfig Files](https://mike.kaply.com/2012/03/16/customizing-firefox-autoconfig-files)
