@@ -1,4 +1,4 @@
-// First line is ignore.  Leave a single line comment here.
+// First line is ignored.  Leave a single line comment here.
 
 var milestone = "0";
 var cfgFile = "Autoconfig";
