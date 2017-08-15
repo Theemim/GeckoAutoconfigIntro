@@ -5,13 +5,15 @@ Autoconfig is a mechanism that can be used to configure Firefox, Thunderbird, Se
 |Characteristic|autoconfig|user.js|
 |:-------------|:---------|:------|
 |File location:|Program directory|Profile|
-|File permissions:|Typically elevated|Typically user|
+|File modification:|Typically requires admin/elevated credentials|Typically requires user credentials|
 |Can affect:|All profiles|The profile where it resides|
 |Function API:| * getPrefBranch()<br />* pref(prefName, value)<br />* defaultPref(prefName, value)<br />* lockPref(prefName, value)<br />* lockPref(prefName)<br /> * getPref(prefName)<br />* clearPref(prefName)<br />* setLDAPVersion(version)<br />* getLDAPAttributes(host, base, filter, attribs, isSecure)<br />* getLDAPValue(str, key)<br />* displayError(funcname, message)<br />* getenv(name)|* user_pref(prefName, value)<br />* pref(prefName, value)<br />* sticky_pref(prefName, value)|
 |Javascript:|Most language features supported|Specialized parser, only the above function calls are processed|
-|Can use other browser APIs via XPCOM:|Yes|No|
+|Error handling:|Exceptions, error dialogs, custom logging possibilities|Typically silent aborting of further file processing|
+|Can use other browser APIs via XPCOM<sup id="a1">[1](#f1)</sup>:|Yes|No|
 |Can be interactive:|Yes|No|
 |Can override or prevent user modifications:|Yes|No|
+|Geared toward:|Organizations, admin, users who want its additional capabilities|Those wanting simpler, inherently per-profile, pref setting capabilities|
 
 Due to the differences in function calls and other aspects, an autoconfig file and user.js are not interchangeable.  Nor are they mutually exclusive.  Both can be used at the same time.  It is worth noting that they can perform similar preference modifications, and converting those calls may only involve changing the name of the function used.  So someone prefering autoconfig may leverage user.js examples, and vice versa.
 
@@ -60,4 +62,6 @@ Most pages about autoconfig were created in the past and have not been kept up t
 #### Mozilla XPCOM Related
 * https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM
 * https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface
+
+<b id="f1">1</b> The deprecation of XUL/XPCOM addons eliminates the primary external consumer of those APIs.  There are plans to remove some of those APIs and rewrite others.  That, combined with the relative obscurity of autoconfig and its more telemetry-resistent user base, will probably lead to some XPCOM utilizing autoconfig files being broken.  Those using, or wanting to use, autoconfig should keep this in mind.  If there is something you are using, or believe is important to keep, you should get involved on that bugzilla and developer fronts.[↩](#a1)
 
