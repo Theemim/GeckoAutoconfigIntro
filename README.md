@@ -4,7 +4,6 @@ Autoconfig is a mechanism that can be used to configure Firefox, Thunderbird, Se
 
 |Characteristic|autoconfig|user.js|
 |:-------------|:---------|:------|
-|Typically used by:|Organizations, admins, advanced users|Anyone|
 |File location:|Program directory|Profile|
 |Typical file permissions:|Admin or elevated|User|
 |Can affect:|All profiles|The profile where it resides|
