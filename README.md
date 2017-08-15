@@ -17,7 +17,7 @@ Autoconfig is a mechanism that can be used to configure Firefox, Thunderbird, Se
 
 Due to the differences in function calls and other aspects, an autoconfig file and user.js are not interchangeable.  Nor are they mutually exclusive.  Both can be used at the same time.  It is worth noting that they can perform similar preference modifications, and converting those calls may only involve changing the name of the function used.  So someone prefering autoconfig may leverage user.js examples, and vice versa.
 
-Most pages about autoconfig were created in the past and have not been kept up to date.  Many examples refer to preferences and/or other things which are no longer applicable.  However, the basic characteristics of autoconfig (such as the function call interface it uses) have been pretty stable.  So even the oldest articles continue to have some relevancy.  I think Mike Kaply's articles provide enough information to get started.
+Most pages about autoconfig were created in the past and have not been kept up to date.  Many examples refer to preferences and/or other things which are no longer applicable.  However, the basic characteristics of autoconfig (such as the function call interface it uses) have been pretty stable.  So even the oldest articles continue to have some relevancy.  I think Mike Kaply's articles provide enough information to get started.  However, I'll provide the links I am aware of and include some on user.js.  It may be beneficial to experiment with the different ways of settings prefs.  The results can be determined by reading them and/or viewing what appears in about:config and prefs.js.
 
 #### Mike Kaply Articles
 * [Firefox Autoconfig Files](https://mike.kaply.com/2012/03/16/customizing-firefox-autoconfig-files)
