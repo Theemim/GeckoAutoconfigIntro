@@ -1,5 +1,7 @@
 // First line is ignored.  Leave a single line comment here.
 
+"use strict";
+
 var milestone = "0";
 var cfgFile = "Autoconfig";
 try {
