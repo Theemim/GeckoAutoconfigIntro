@@ -8,7 +8,7 @@ try {
   cfgFile = getPref("general.config.filename");
   function setMilestone(str) {
     milestone = str;
-    lockPref("_autoconfigMilestone", str);
+    lockPref("__testcfgMilestone", str);
   }
   setMilestone("1");
 
@@ -16,7 +16,29 @@ try {
   if(typeof(Services) === "undefined") {
     Components.utils.import("resource://gre/modules/Services.jsm");
   }
-  var msg = username + ": Would you like to perform error handling tests?";
+  var msg = "Hello " + username + ".  I looked for test prefs:\n\n";
+  var testPrefs = [
+    "__testcfg-error1",
+    "__testcfg-error2",
+    "__testcfg-error3",
+    "__testcfg-error4",
+    "__testcfg-error5",
+    "__testcfg-setwith-pref",
+    "__testcfg-setwith-defaultPref",
+    "__testcfg-setwith-lockPref",
+    "__userjs-error1",
+    "__userjs-error2",
+    "__userjs-error3",
+    "__userjs-error4",
+    "__userjs-error5",
+    "__userjs-setwith-user_pref",
+    "__userjs-setwith-pref",
+    "__userjs-setwith-sticky_pref",
+  ];
+  testPrefs.forEach(function(prefName) {
+    msg += prefName + " : " + getPref(prefName) + "\n";
+  });
+  msg += "\nWould you like to perform error handling tests?\n";
   if(Services.prompt.confirm(null, cfgFile, msg) === true) {
 
     // Throw of new Error
@@ -26,20 +48,23 @@ try {
     //throw("This is a throw of a string");
 
     // Test non-existent function call
-    //var foo = thisFunctionDoesNotExist();
+    //thisFunctionDoesNotExist();
 
     // Too few arguments
-    //pref("_testcfg-error1");
+    //lockPref("__testcfg-error1");
 
     // Setting an int pref to a string
-    //lockPref("_testcfg-error2", 1);
-    //lockPref("_testcfg-error2", "whoops");
+    //lockPref("__testcfg-error2", 1);
+    //lockPref("__testcfg-error2", "FOUND");
 
     // Missing semicolon
-    //lockPref("_testcfg-error3", "Is this set?")
+    //lockPref("__testcfg-error3", "FOUND")
+
+    // Missing closing quote
+    //lockPref("__testcfg-error4, "FOUND");
 
     // Extra paren
-    //throw("This is a throw"));
+    //lockPref("__testcfg-error5", "FOUND"));
 
     // Unmatched closing brace
     // }
@@ -47,22 +72,29 @@ try {
   }
   setMilestone("2");
 
-  msg = username + ": Would you like to perform pref set tests?";
-  if(Services.prompt.confirm(null, cfgFile, msg) === true) {
-    pref("_testcfg-pref1", "pref1: set with pref()");
-    defaultPref("_testcfg-pref2", "pref2: set with defaultPref()");
-    lockPref("_testcfg-pref3", "pref3: set with lockPref()");
+  msg = "Would you like to perform pref set tests?\n";
+  var doPrefSetTests = Services.prompt.confirm(null, cfgFile, msg);
+  if(doPrefSetTests) {
+    pref("__testcfg-setwith-pref", "FOUND");
+    defaultPref("__testcfg-setwith-defaultPref", "FOUND");
+    lockPref("__testcfg-setwith-lockPref", "FOUND");
+    msg = "I looked for test prefs again:\n\n";
+    testPrefs.forEach(function(prefName) {
+      msg += prefName + " : " + getPref(prefName) + "\n";
+    });
+    msg += "\n"
   }
+  else msg = "";
   setMilestone("3");
 
-  msg = username + ": Would you like to perform pref clear tests?";
+  msg += "Would you like to clear all test prefs?\n";
   if(Services.prompt.confirm(null, cfgFile, msg) === true) {
-    clearPref("_testcfg-pref1");
-    clearPref("_testcfg-pref2");
-    clearPref("_testcfg-pref3");
+    testPrefs.forEach(function(prefName) {
+      clearPref(prefName);
+    });
   }
   setMilestone("4");
-
+  
   var consoleSvc = Components.classes["@mozilla.org/consoleservice;1"]
                              .getService(Components.interfaces.nsIConsoleService);
   consoleSvc.logStringMessage(cfgFile + " was here");
