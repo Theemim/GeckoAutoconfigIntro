@@ -161,7 +161,7 @@ try {
     prefSetFunc("__userjs-setwith-user_pref", prefValue);
     prefSetFunc("__userjs-setwith-pref", prefValue);
     prefSetFunc("__userjs-setwith-sticky_pref", prefValue);
-    leader = "The testcfg prefs were set.";
+    leader = "The userjs prefs were set.";
   }
   setMilestone("5");
 
