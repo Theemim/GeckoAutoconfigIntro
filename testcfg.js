@@ -62,7 +62,7 @@ try {
     "__userjs-setwith-pref",
     "__userjs-setwith-sticky_pref",
   ];
-  function getTestPrefsStr(prefix) {
+  function getTestPrefsStr() {
     var str = "Current state of test prefs:\n\n";
     testPrefs.forEach(function(prefName) {
       str += prefName + " : " + getPref(prefName) + "\n";
