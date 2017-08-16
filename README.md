@@ -8,7 +8,7 @@ Autoconfig is a mechanism that can be used to configure Firefox, Thunderbird, Se
 |File modification:|Typically requires admin/elevated credentials|Typically requires user credentials|
 |Can affect:|All profiles|The profile where it resides|
 |Function API:| * getPrefBranch()<br />* pref(prefName, value)<br />* defaultPref(prefName, value)<br />* lockPref(prefName, value)<br />* lockPref(prefName)<br /> * getPref(prefName)<br />* clearPref(prefName)<br />* setLDAPVersion(version)<br />* getLDAPAttributes(host, base, filter, attribs, isSecure)<br />* getLDAPValue(str, key)<br />* displayError(funcname, message)<br />* getenv(name)|* user_pref(prefName, value)<br />* pref(prefName, value)<br />* sticky_pref(prefName, value)|
-|Javascript:|Most language features supported|Specialized parser, only the above function calls are processed|
+|Javascript:|Most language features supported|File parser will only process the above function calls|
 |Error handling:|Exceptions, error dialogs, custom logging possibilities|Typically silent aborting of file processing|
 |Can use other browser APIs via XPCOM<sup id="a1">[1](#f1)</sup>:|Yes|No|
 |Can be interactive:|Yes|No|
