@@ -72,9 +72,8 @@ try {
   }
   setMilestone("2");
 
-  msg = "Would you like to perform pref set tests?\n";
-  var doPrefSetTests = Services.prompt.confirm(null, cfgFile, msg);
-  if(doPrefSetTests) {
+  msg = "Would you like to set testcfg prefs?\n";
+  if(Services.prompt.confirm(null, cfgFile, msg) === true) {
     pref("__testcfg-setwith-pref", "FOUND");
     defaultPref("__testcfg-setwith-defaultPref", "FOUND");
     lockPref("__testcfg-setwith-lockPref", "FOUND");
