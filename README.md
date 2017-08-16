@@ -12,7 +12,7 @@ Autoconfig is a mechanism that can be used to configure Firefox, Thunderbird, Se
 |Error handling:|Exceptions, error dialogs, custom logging possibilities|Typically silent aborting of file processing|
 |Can use other browser APIs via XPCOM<sup id="a1">[1](#f1)</sup>:|Yes|No|
 |Can be interactive:|Yes|No|
-|Can override or prevent user modifications:|Yes|No|
+|Can override and restrict user modifications:|Yes|No|
 |Geared toward:|Organizations, admin, users who want its additional capabilities|Those wanting simpler, inherently per-profile, pref setting capabilities|
 
 Due to the differences in function calls and other aspects, an autoconfig file and user.js are not interchangeable.  Nor are they mutually exclusive.  Both can be used at the same time.  It is worth noting that they can perform similar preference modifications, and converting those calls may only involve changing the name of the function used.  So someone prefering autoconfig may leverage user.js examples, and vice versa.
