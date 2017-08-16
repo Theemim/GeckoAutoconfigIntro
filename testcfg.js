@@ -137,7 +137,7 @@ try {
     leader = "The testcfg prefs were set.";
   }
   else leader = "";
-  setMilestone("3");
+  setMilestone("4");
 
   msg = getDialogMsg(leader, "Would you like to set userjs prefs?");
   buttonPressed = buttonPrompt(cfgFile, msg, "Set userjs prefs", "Skip", null);
@@ -163,7 +163,7 @@ try {
     prefSetFunc("__userjs-setwith-sticky_pref", prefValue);
     leader = "The testcfg prefs were set.";
   }
-  setMilestone("4");
+  setMilestone("5");
 
   msg = getDialogMsg(leader, "Would you like to clear all test prefs?");
   buttonPressed = buttonPrompt(cfgFile, msg, "Clear all test prefs", "Skip", null);
@@ -174,7 +174,7 @@ try {
     leader = "All test prefs were cleared.";
   }
   else leader = "";
-  setMilestone("5");
+  setMilestone("6");
 
   msg = getDialogMsg(leader, "Nothing more to do.");
   buttonPrompt(cfgFile, msg, null, "OK", null);
@@ -182,7 +182,7 @@ try {
   var consoleSvc = Components.classes["@mozilla.org/consoleservice;1"]
                              .getService(Components.interfaces.nsIConsoleService);
   consoleSvc.logStringMessage(cfgFile + " was here");
-  setMilestone("6 (Done)");
+  setMilestone("7 (Done)");
 }
 catch(e) {
   displayError(cfgFile, "\n\n " + e.toString() + "\n Stack: " + e.stack +
