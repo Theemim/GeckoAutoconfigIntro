@@ -94,7 +94,7 @@ try {
     });
   }
   setMilestone("4");
-  
+
   var consoleSvc = Components.classes["@mozilla.org/consoleservice;1"]
                              .getService(Components.interfaces.nsIConsoleService);
   consoleSvc.logStringMessage(cfgFile + " was here");

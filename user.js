@@ -1,5 +1,3 @@
-// First line is ignored.  Leave a single line comment here.
-
 user_pref("__userjsMilestone", "1");
 
 // Test non-existent function call
