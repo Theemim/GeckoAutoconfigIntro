@@ -19,7 +19,7 @@ Due to the differences in function calls and other aspects, an autoconfig file a
 
 Most pages about autoconfig were created in the past and have not been kept up to date.  Many examples refer to preferences and/or other things which are no longer applicable.  However, the basic characteristics of autoconfig (such as the function call interface it uses) have been pretty stable.  So even the oldest articles continue to have some relevancy.
 
-If you are interested in this subject, I would suggest that you start with Mike Kaply's articles.  Plus, play around in a test environment.  Try manipulating prefs in different ways.  Then check the results by reading prefs and viewing what appears in about:config and prefs.js.
+If you are interested in this subject, I would suggest that you start with Mike Kaply's articles.  Plus, play around in a test environment.  Try manipulating prefs in different ways.  Then check the results by reading prefs and viewing what appears in about:config and prefs.js.  The autoconfig.js, testcfg.js, and user.js files are intended for such experimentation.
 
 #### Mike Kaply Articles
 * [Firefox Autoconfig Files](https://mike.kaply.com/2012/03/16/customizing-firefox-autoconfig-files)
