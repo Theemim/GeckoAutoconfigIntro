@@ -118,7 +118,7 @@ try {
   }
   setMilestone("2");
 
-  var profileDir = Services.dirsvc.get("ProfD", Components.interfaces.nsILocalFile);
+  var profileDir = Services.dirsvc.get("ProfD", Components.interfaces.nsIFile);
   var leader = "Hello " + (getenv("USERNAME") || getenv("USER") || "Human") + "!\n\n" +
                "You are working with profile: " + profileDir.leafName;
   var msg = getDialogMsg(leader, "Would you like to create an error condition?");
