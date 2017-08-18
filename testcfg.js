@@ -6,15 +6,16 @@ var milestone = "0";
 var cfgFile = "Autoconfig";
 try {
   cfgFile = getPref("general.config.filename");
-  function setMilestone(str) {
-    milestone = str;
-    lockPref("__testcfgMilestone", str);
-  }
-  setMilestone("1");
-
   if(typeof(Services) === "undefined") {
     Components.utils.import("resource://gre/modules/Services.jsm");
   }
+  function setMilestone(str) {
+    milestone = str;
+    lockPref("__testcfgMilestone", str);
+    //Services.prompt.alert(null, cfgFile, "Milestone: " + str);
+  }
+  setMilestone("1");
+
   function createErrorCondition() {
     // Throw of new Error
     throw(new Error("This is a throw of a new Error"));
@@ -45,6 +46,7 @@ try {
     // }
   }
   var testPrefs = [
+    // __testcfgMilestone
     "__testcfg-error1",
     "__testcfg-error2",
     "__testcfg-error3",
@@ -53,6 +55,7 @@ try {
     "__testcfg-setwith-pref",
     "__testcfg-setwith-defaultPref",
     "__testcfg-setwith-lockPref",
+    //__userjsMilestone
     "__userjs-error1",
     "__userjs-error2",
     "__userjs-error3",
