@@ -49,7 +49,7 @@ If you are interested in this subject, I would suggest that you start with Mike 
 #### Other Autoconfig Links
 * [http://web.mit.edu/~firefox/www/maintainers/autoconfig.html](http://web.mit.edu/~firefox/www/maintainers/autoconfig.html)
 * [http://pascal-mietlicki.fr/en/blog/post/work/firefox-autoconfig/](http://pascal-mietlicki.fr/en/blog/post/work/firefox-autoconfig/)
-* [https://wpkg.org/Thunderbird](https://wpkg.org/Thunderbird)
+* [https://wpkg.org/Thunderbird#Thunderbird_Configuration](https://wpkg.org/Thunderbird#Thunderbird_Configuration)
 * [http://kb.mozillazine.org/Configuration_utilities_for_administrators](http://kb.mozillazine.org/Configuration_utilities_for_administrators)
 * [http://kb.mozillazine.org/Locking_preferences](http://kb.mozillazine.org/Locking_preferences)
 
