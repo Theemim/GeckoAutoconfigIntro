@@ -27,15 +27,19 @@ If you are interested in this subject, I would suggest that you start with Mike 
 * [Advanced Autoconfig Files](https://mike.kaply.com/2012/03/22/customizing-firefox-advanced-autoconfig-files/)
 * [Debugging Firefox Autoconfig Problems](https://mike.kaply.com/2016/09/08/debugging-firefox-autoconfig-problems/)
 
-#### Mozilla Source Code
-* [/extensions/pref/autoconfig](https://dxr.mozilla.org/mozilla-central/source/extensions/pref/autoconfig/)
-* [/modules/libpref](https://dxr.mozilla.org/mozilla-central/source/modules/libpref/)
-
 #### Mozilla Autoconfig Related
 * [Mission Control Desktop AKA AutoConfig](https://developer.mozilla.org/docs/MCD,_Mission_Control_Desktop_AKA_AutoConfig)
 * [A brief guide to Mozilla preferences](https://developer.mozilla.org/docs/Mozilla/Preferences/A_brief_guide_to_Mozilla_preferences)
 * [Deploying Firefox in an Enterprise Environment](https://developer.mozilla.org/Firefox/Enterprise_deployment)
 * [Deploying Thunderbird in the Enterprise](https://developer.mozilla.org/docs/Mozilla/Thunderbird/Deploying_Thunderbird_in_the_Enterprise)
+
+#### Mozilla Source Code
+* [/extensions/pref/autoconfig](https://dxr.mozilla.org/mozilla-central/source/extensions/pref/autoconfig/)
+* [/modules/libpref](https://dxr.mozilla.org/mozilla-central/source/modules/libpref/)
+
+#### Mozilla XPCOM Related
+* https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM
+* https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface
 
 #### Dean Brundage Articles
 * [An Introduction To Mission Control Desktop](http://blog.deanandadie.net/2010/04/an-introduction-to-mission-control-desktop/)
@@ -53,15 +57,12 @@ If you are interested in this subject, I would suggest that you start with Mike 
 * [http://kb.mozillazine.org/Configuration_utilities_for_administrators](http://kb.mozillazine.org/Configuration_utilities_for_administrators)
 * [http://kb.mozillazine.org/Locking_preferences](http://kb.mozillazine.org/Locking_preferences)
 
-#### Miscellaneous Links
+#### Related Links
 * [https://github.com/mkaply/cck2wizard](https://github.com/mkaply/cck2wizard)
 * [https://github.com/sz-blacky/firefox-gpo](https://github.com/sz-blacky/firefox-gpo)
 * [https://github.com/n8felton/Firefox-ADMX](https://github.com/n8felton/Firefox-ADMX)
 * [http://www.amsys.co.uk/2015/09/using-firefox-cck2-and-autopkg/](http://www.amsys.co.uk/2015/09/using-firefox-cck2-and-autopkg/)
 * [https://github.com/ElektraInitiative/libelektra/blob/master/src/plugins/mozprefs/autoconfig/README.md](https://github.com/ElektraInitiative/libelektra/blob/master/src/plugins/mozprefs/autoconfig/README.md)
-* [https://sourceforge.net/p/nsis/bugs/1119/#4aa5](https://sourceforge.net/p/nsis/bugs/1119/#4aa5)
-* [https://mike.kaply.com/2015/02/10/installing-certificates-into-firefox/](https://mike.kaply.com/2015/02/10/installing-certificates-into-firefox/)
-* [https://stackoverflow.com/questions/37553127/is-it-possible-to-automatically-import-certificates-in-firefox](https://stackoverflow.com/questions/37553127/is-it-possible-to-automatically-import-certificates-in-firefox)
 * [https://support.securly.com/hc/en-us/articles/215479918-Firefox-SSL-Management](https://support.securly.com/hc/en-us/articles/215479918-Firefox-SSL-Management)
 
 #### User.js Overviews
