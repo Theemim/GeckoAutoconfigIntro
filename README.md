@@ -64,6 +64,7 @@ If you are interested in this subject, I would suggest that you start with Mike 
 * [http://www.amsys.co.uk/2015/09/using-firefox-cck2-and-autopkg/](http://www.amsys.co.uk/2015/09/using-firefox-cck2-and-autopkg/)
 * [https://github.com/ElektraInitiative/libelektra/blob/master/src/plugins/mozprefs/autoconfig/README.md](https://github.com/ElektraInitiative/libelektra/blob/master/src/plugins/mozprefs/autoconfig/README.md)
 * [https://support.securly.com/hc/en-us/articles/215479918-Firefox-SSL-Management](https://support.securly.com/hc/en-us/articles/215479918-Firefox-SSL-Management)
+* [https://stackoverflow.com/questions/37553127/is-it-possible-to-automatically-import-certificates-in-firefox](https://stackoverflow.com/questions/37553127/is-it-possible-to-automatically-import-certificates-in-firefox)
 
 #### User.js Overviews
 * [https://github.com/ghacksuserjs/ghacks-user.js/wiki/1.1-Overview](https://github.com/ghacksuserjs/ghacks-user.js/wiki/1.1-Overview)
@@ -74,9 +75,6 @@ If you are interested in this subject, I would suggest that you start with Mike 
 * https://github.com/pyllyukko/user.js/
 * https://github.com/atomGit/Firefox-user.js
 
-#### Mozilla XPCOM Related
-* https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM
-* https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface
 ---
 <b id="f1">1</b> The deprecation of XUL/XPCOM addons eliminates the primary external consumer of those APIs.  There are plans to remove some of those APIs and rewrite others.  That, combined with the relative obscurity of autoconfig and its more telemetry-resistant user base, may lead to some XPCOM utilizing autoconfig files being broken.  Those using, or wanting to use, autoconfig should keep this in mind.  If there is something you are using, or believe is important to keep, you should get involved on the bugzilla and developer fronts.[↩](#a1)
 
