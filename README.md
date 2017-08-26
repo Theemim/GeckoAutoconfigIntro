@@ -53,6 +53,18 @@ If you are interested in this subject, I would suggest that you start with Mike 
 * [http://kb.mozillazine.org/Configuration_utilities_for_administrators](http://kb.mozillazine.org/Configuration_utilities_for_administrators)
 * [http://kb.mozillazine.org/Locking_preferences](http://kb.mozillazine.org/Locking_preferences)
 
+#### Miscellaneous Links
+* [https://github.com/mkaply/cck2wizard](https://github.com/mkaply/cck2wizard)
+* [https://github.com/sz-blacky/firefox-gpo](https://github.com/sz-blacky/firefox-gpo)
+* [https://www.pdq.com/blog/enforce-firefox-settings/](https://www.pdq.com/blog/enforce-firefox-settings/)
+* [https://github.com/n8felton/Firefox-ADMX](https://github.com/n8felton/Firefox-ADMX)
+* [http://www.amsys.co.uk/2015/09/using-firefox-cck2-and-autopkg/](http://www.amsys.co.uk/2015/09/using-firefox-cck2-and-autopkg/)
+* [https://github.com/ElektraInitiative/libelektra/blob/master/src/plugins/mozprefs/autoconfig/README.md](https://github.com/ElektraInitiative/libelektra/blob/master/src/plugins/mozprefs/autoconfig/README.md)
+* [https://sourceforge.net/p/nsis/bugs/1119/#4aa5](https://sourceforge.net/p/nsis/bugs/1119/#4aa5)
+* [https://mike.kaply.com/2015/02/10/installing-certificates-into-firefox/](https://mike.kaply.com/2015/02/10/installing-certificates-into-firefox/)
+* [https://stackoverflow.com/questions/37553127/is-it-possible-to-automatically-import-certificates-in-firefox](https://stackoverflow.com/questions/37553127/is-it-possible-to-automatically-import-certificates-in-firefox)
+* [https://support.securly.com/hc/en-us/articles/215479918-Firefox-SSL-Management](https://support.securly.com/hc/en-us/articles/215479918-Firefox-SSL-Management)
+
 #### User.js Overviews
 * [https://github.com/ghacksuserjs/ghacks-user.js/wiki/1.1-Overview](https://github.com/ghacksuserjs/ghacks-user.js/wiki/1.1-Overview)
 * [http://kb.mozillazine.org/User.js_file](http://kb.mozillazine.org/User.js_file)
