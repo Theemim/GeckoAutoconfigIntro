@@ -56,7 +56,6 @@ If you are interested in this subject, I would suggest that you start with Mike 
 #### Miscellaneous Links
 * [https://github.com/mkaply/cck2wizard](https://github.com/mkaply/cck2wizard)
 * [https://github.com/sz-blacky/firefox-gpo](https://github.com/sz-blacky/firefox-gpo)
-* [https://www.pdq.com/blog/enforce-firefox-settings/](https://www.pdq.com/blog/enforce-firefox-settings/)
 * [https://github.com/n8felton/Firefox-ADMX](https://github.com/n8felton/Firefox-ADMX)
 * [http://www.amsys.co.uk/2015/09/using-firefox-cck2-and-autopkg/](http://www.amsys.co.uk/2015/09/using-firefox-cck2-and-autopkg/)
 * [https://github.com/ElektraInitiative/libelektra/blob/master/src/plugins/mozprefs/autoconfig/README.md](https://github.com/ElektraInitiative/libelektra/blob/master/src/plugins/mozprefs/autoconfig/README.md)
