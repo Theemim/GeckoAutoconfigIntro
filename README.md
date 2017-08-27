@@ -21,6 +21,9 @@ Most pages about autoconfig were created in the past and have not been kept up t
 
 If you are interested in this subject, I would suggest that you start with Mike Kaply's articles.  Plus, play around in a test environment.  Try manipulating prefs in different ways.  Then check the results by reading prefs and viewing what appears in about:config and prefs.js.  The autoconfig.js, test.cfg, and user.js files here are intended for such experimentation.
 
+
+
+
 #### Mike Kaply Articles
 * [Firefox Autoconfig Files](https://mike.kaply.com/2012/03/16/customizing-firefox-autoconfig-files)
 * [Firefox Autoconfig Files Continued](https://mike.kaply.com/2012/03/20/customizing-firefox-autoconfig-files-continued/)
@@ -40,6 +43,9 @@ If you are interested in this subject, I would suggest that you start with Mike 
 #### Mozilla XPCOM Related
 * https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM
 * https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface
+
+#### Mozilla Bugzilla
+* https://bugzilla.mozilla.org/buglist.cgi?product=Core&component=AutoConfig%20(Mission%20Control%20Desktop)
 
 #### Dean Brundage Articles
 * [An Introduction To Mission Control Desktop](http://blog.deanandadie.net/2010/04/an-introduction-to-mission-control-desktop/)
